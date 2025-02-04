@@ -25,9 +25,9 @@ def popup(message="Done!"):
 
 # Sidebar
 with st.sidebar:
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([2, 3, 2])
     with col2:
-        main_icon = st.image("extrafiles/1695795692729-removebg-preview.png", width=200)
+        main_icon = st.image("extrafiles/1695795692729-removebg-preview.png", width=100)
         title = st.header("Diya Infotech TimeSheet")
     month = st.selectbox(label="Month",options=all_months, index=datetime.now().month-1)
     year = st.text_input(label="Year", max_chars=15, value = datetime.now().year)
