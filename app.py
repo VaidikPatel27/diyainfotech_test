@@ -9,7 +9,7 @@ import calendar, os
 # Page Configuration
 st.set_page_config(
     page_title="Time-Sheet",
-    page_icon=Image.open("extrafiles/1695795692729.ico"),
+    page_icon=Image.open("extrafiles/1695795692729-removebg-preview.png"),
     initial_sidebar_state="collapsed",
     layout="wide"
 )
@@ -113,12 +113,6 @@ column_configurator = {
                         ),    
                       }
 
-
-
-# if data is not None:
-#     in_time = data['punch_in']
-#     out_time = data['punch_out']
-    # write here to create sum and find total salary.
 
 
 if os.path.exists(path):
