@@ -44,7 +44,7 @@ with st.sidebar:
 # Main Page
 st.header('TimeSheet')
 st.text("")
-col1, col2, col3 = st.columns([1,1,10])
+col1, col2, col3 = st.columns([2,2,8])
 with col1:
     month = st.selectbox(label="Choose Month",options=all_months, index=datetime.now().month-1)
 with col2:
