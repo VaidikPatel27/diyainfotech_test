@@ -1,6 +1,7 @@
 import pandas as pd
 import calendar
 import os
+from datetime import time
 
 def get_dates_days(month, year):
     num_days = calendar.monthrange(year,month)[1]
@@ -24,8 +25,8 @@ def create_new_datafile(month, year):
     df = pd.DataFrame({
             "date": dates,
             "day": days,
-            "punch_in": [''] * num_rows,
-            "punch_out": [''] * num_rows,
+            "punch_in": time(8,0) * num_rows,
+            "punch_out": time(18,0) * num_rows,
             "early-leave": [False] * num_rows,
             "total-earning" : ['-'] * num_rows,
             "notes": ['-'] * num_rows,
