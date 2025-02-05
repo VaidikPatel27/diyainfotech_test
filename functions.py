@@ -25,8 +25,8 @@ def create_new_datafile(month, year):
     df = pd.DataFrame({
             "date": dates,
             "day": days,
-            "punch_in": time(8,0) * num_rows,
-            "punch_out": time(18,0) * num_rows,
+            "punch_in": [time(8,0)] * num_rows,
+            "punch_out": [time(18,0)] * num_rows,
             "early-leave": [False] * num_rows,
             "total-earning" : ['-'] * num_rows,
             "notes": ['-'] * num_rows,
