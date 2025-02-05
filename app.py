@@ -81,6 +81,7 @@ column_configurator = {
                             max_value=time(18, 0, 0),
                             format="hh:mm a",
                             step=30,
+                            disabled = False,
                             width = "small",
                         ),
                         "punch_out" : st.column_config.TimeColumn(
@@ -89,6 +90,7 @@ column_configurator = {
                             max_value=time(18, 0, 0),
                             format="hh:mm a",
                             step=30,
+                            disabled = False,
                             width = "small",
                         ),
                         "day" : st.column_config.TextColumn(
